@@ -1,6 +1,8 @@
 
 import './App.scss'
 import Gallery from './gallery';
+import About from './about';
+import Contact from './Contact';
 import { GiShoppingCart } from "react-icons/gi";
 import { FaLongArrowAltDown } from "react-icons/fa";
 
@@ -49,6 +51,12 @@ function App() {
       </div>
       <div id="gallery" className='gallery'>
         <Gallery/>
+      </div>
+      <div id="about" className="about">
+         <About/>
+      </div>
+      <div id="contact" className="contact">
+          <Contact/>
       </div>
     </div>
   );

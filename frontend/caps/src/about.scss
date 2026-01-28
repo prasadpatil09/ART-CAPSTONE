@@ -1,0 +1,109 @@
+$writing-color: #aaa8a6;
+$highlight-color: #c67153;
+$primary-color: #daa692;
+
+.about-section{
+    margin-top: 100px;
+    height: auto;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 90px;
+}
+.img-about{
+    position: relative;
+    height: 520px;
+    width: 400px;
+    border-radius: 10px;
+    border: 12px solid rgb(234, 231, 231);
+    background-color: rgb(234, 231, 231);
+}
+.img-about img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.about-container-img{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: calc(100vw - 50%);
+}
+.about-container-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: calc(100vw - 50%);
+    gap: 15px;
+}
+.about-container-text .boxes{
+    height: auto;
+    width: 100%;
+    display: flex;
+    gap: 25px;
+}
+.boxes .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 120px;
+    width: 120px;
+    background-color: rgb(234, 231, 231);
+    border-radius: 12px;
+    align-items: center;
+    gap: 5px;
+}
+.about-container-text .abouth1{
+    font-size: 12px;
+    color: $highlight-color;
+    font-weight: normal;
+}
+
+.about-container-text .abouth2{
+    font-size: 31px;
+    color: black;
+
+}
+.about-container-text .abouth3{
+    font-size: 14px;
+    color: $writing-color;
+}
+.boxes .box .number{
+    font-weight: 500;
+    font-size: 17px;
+}
+.boxes .box .text{
+    font-size: 12px;
+    color: $writing-color;
+}
+.boxes .box .icon{
+    color: $highlight-color;
+}
+.img-about .img-message{
+ position: absolute;
+ top: 97%;
+ left : 80%;
+    transform: translate(-50%,-50%);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    border-radius: 10px;
+    padding : 8px 15px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.img-about .img-message p{
+    font-size: 11px;
+    font-style: italic;
+}
+.img-about .img-message .img-span{
+font-style: normal;
+}

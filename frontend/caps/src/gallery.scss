@@ -9,6 +9,7 @@ $primary-color: #daa692;
 }
 .gallery{
     height: auto;
+    margin-top: 80px;
     width: 100vw;
     min-height: 100vh;
     display: flex;
@@ -62,4 +63,76 @@ $primary-color: #daa692;
 .fl-row li.active {
   background-color: #c67153;
   color: white;
+}
+.img-gallery{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    width: 80vw;
+    height: auto;
+}
+.img-item{
+    width: 220px;
+    height: 280px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #aaa8a6;
+}
+.img-item .img-overlay{
+    position: absolute;
+     top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.img-item .img:hover .img-overlay{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.img-item .img-overlay button{
+    margin: 5px;
+    padding: 6px 35px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+}
+.img-item .img-overlay .add{
+    background-color: $highlight-color;
+}
+.img-item .img-overlay .view{
+    color: black;
+}
+
+.img-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+.img-item:hover img{
+    transform: scale(1.1);
+}
+.img-info{
+    margin-top: 8px;
+}
+.img-info .art-name{
+    font-size: 12px;
+    color: black;
+    margin-bottom: 3px;
+}
+.img-info .art-size{
+    font-size: 11px;
+    color: $writing-color;
+    margin-bottom: 2px;
+}
+.img-info .art-price{
+    font-size: 11px;
+    color: $highlight-color;
+    font-weight: bold;
 }
